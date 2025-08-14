@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #1f242d;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 9%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.navbar .logo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.navbar ul {
+  display: flex;
+}
+
+.navbar ul li {
+  list-style: none;
+  margin-left: 35px;
+}
+
+.navbar ul li a {
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  transition: .3s;
+}
+
+.navbar ul li a.active,
+.navbar ul li a:hover {
+  color: #7cf03d;
+}
+
+/* Services */
+.services {
+  padding: 120px 9% 50px;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 36px;
+  color: #7cf03d;
+  margin-bottom: 40px;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.service-card {
+  background: #1f242d;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(124, 240, 61, 0.3);
+  transition: 0.3s;
+  text-align: center;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(124, 240, 61, 0.7);
+}
+
+.service-card i {
+  font-size: 40px;
+  color: #7cf03d;
+  margin-bottom: 15px;
+}
+
+.service-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.service-card p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Process */
+.process {
+  background: #15191f;
+  padding: 50px 9%;
+  text-align: center;
+}
+
+.process h2 {
+  font-size: 36px;
+  color: #7cf03d;
+  margin-bottom: 40px;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.step {
+  background: #1f242d;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(124, 240, 61, 0.3);
+  transition: 0.3s;
+}
+
+.step:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(124, 240, 61, 0.7);
+}
+
+.step span {
+  display: inline-block;
+  background: #7cf03d;
+  color: #1f242d;
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 10px 15px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.step h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 5%;
+  }
+}

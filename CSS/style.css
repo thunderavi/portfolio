@@ -277,3 +277,218 @@ a {
         height: 70vw;
     }
 }
+
+.contact {
+    min-height: 100vh;
+    padding: 120px 9% 50px;
+    color: #fff;
+    text-align: center;
+}
+
+.contact h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 16px;
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.info-box {
+    background: #1f242d;
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(124, 240, 61, 0.4);
+    width: 250px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(124, 240, 61, 0.7);
+}
+
+.info-box i {
+    font-size: 40px;
+    color: #7cf03d;
+    margin-bottom: 10px;
+}
+
+.info-box h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.info-box p, 
+.info-box a {
+    font-size: 14px;
+    color: #ccc;
+    word-break: break-word;
+}
+.about {
+  min-height: 100vh;
+  padding: 120px 9% 50px;
+  color: #fff;
+}
+
+.about-intro {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about-intro h1 {
+  font-size: 42px;
+}
+
+.about-intro h2 {
+  font-size: 28px;
+  margin-top: -5px;
+  color: #7cf03d;
+}
+
+.about-intro p {
+  font-size: 16px;
+  color: #aaa;
+  margin: 20px 0;
+}
+
+.about-intro .btn {
+  padding: 10px 25px;
+  font-size: 16px;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.project-card {
+  background: #1f242d;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(124, 240, 61, 0.3);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(124, 240, 61, 0.7);
+}
+
+.project-card i {
+  font-size: 40px;
+  color: lightgreen;
+  margin-bottom: 10px;
+}
+
+.project-card h3 {
+  font-size: 20px;
+  color: lightgreen;
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.project-card a {
+  color: lightgreen;
+  font-size: 14px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.project-card a:hover {
+  text-decoration: underline;
+}
+
+/* Horizontal GitHub Cards */
+.project-card-horizontal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #1f242d;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(124, 240, 61, 0.3);
+  transition: 0.3s;
+  gap: 20px;
+}
+
+.project-card-horizontal:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(124, 240, 61, 0.7);
+}
+
+.project-card-horizontal i {
+  font-size: 50px;
+  color: lightgreen;
+  flex-shrink: 0;
+}
+
+.project-details {
+  flex: 1;
+}
+
+.project-details h3 {
+  font-size: 18px;
+  color: lightgreen;
+  margin-bottom: 5px;
+}
+
+.project-details p {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.github-btn {
+  background: lightgreen;
+  color: #1f242d;
+  padding: 8px 15px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s;
+  flex-shrink: 0;
+}
+
+.github-btn:hover {
+  background: transparent;
+  border: 2px solid lightgreen;
+  color: lightgreen;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .project-card-horizontal {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .project-card-horizontal i {
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+
+  .github-btn {
+    align-self: flex-start;
+    margin-top: 10px;
+  }
+}
